@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Live Chat</title>
+  <meta charset="UTF-8">
+  <title>TDRSS Livestream</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      text-align: center;
+    }
+
+    h1 {
+      background-color: #0078d4;
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    #chat-container {
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body>
   <h1>TDRSS Livestream</h1>
-  <!-- Embed your Teams Chat widget here -->
-<!DOCTYPE html><html><body><script type="text/javascript" src="https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js" id="chatbot" environmentId="7556d6ee-fe9f-ebb4-b17b-6db605865110" crossorigin="anonymous"></script></body></html>
+  <div id="chat-container">
+    <!-- Embed Microsoft Teams Chat widget -->
+    <script type="text/javascript"
+            src="https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js"
+            id="chatbot"
+            environmentId="7556d6ee-fe9f-ebb4-b17b-6db605865110"
+            crossorigin="anonymous">
+    </script>
+  </div>
 </body>
 </html>
