@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Chatbot</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        .fallback {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-  <script type="text/javascript"
-          src="https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js"
-          id="chatbot"
-          environmentId="7556d6ee-fe9f-ebb4-b17b-6db605865110"
-          crossorigin="anonymous">
-  </script>
+    <div class="container">
+        <noscript>
+            <p class="fallback">JavaScript is required to display the chatbot. Please enable JavaScript in your browser.</p>
+        </noscript>
+        <script
+            type="text/javascript"
+            src="https://res.public.onecdn.static.microsoft/customerconnect/v1/7dttl/init.js"
+            id="chatbot"
+            environmentId="7556d6ee-fe9f-ebb4-b17b-6db605865110"
+            crossorigin="anonymous"
+            async
+        ></script>
+    </div>
 </body>
 </html>
